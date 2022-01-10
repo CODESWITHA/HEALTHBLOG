@@ -1,0 +1,717 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eef0eb;
+  color: rgb(41, 36, 36);
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #1a240a;
+  padding: 1rem;
+  padding-right: 3rem;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.navbar-links li :hover {
+  color: rgb(153, 156, 153);
+}
+.toggle-button {
+  position: absolute;
+  top: 2rem;
+  right: 1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 23px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: darkred;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100vw;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+  .navbar-links a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+h1 {
+  margin: 0;
+  position: static;
+  justify-self: center;
+  
+  padding: 30px 0;
+  font-family: "Aclonica", sans-serif;
+  text-align: center;
+  font-size: 250%;
+  color: #3d0909;
+  background-color:  #eef0eb;
+}
+h2 {
+  margin: 0;
+  position: static;
+  justify-self: center;
+  padding-top: 50px;
+  font-family: "Aclonica", sans-serif;
+  text-align: center;
+  font-size: 220%;
+}
+
+#mainpage {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("bk5.jpeg");
+  background-size: cover;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 200%;
+}
+
+h4 {
+  display: flex;
+  background-color: rgb(246, 237, 236);
+  align-items: center;
+  position: relative;
+  top: 6em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 130%;
+  padding: 80px;
+  border-radius: 50%;
+}
+
+#section2 {
+  height: 140vh;
+  background-image: url("b3.jpg");
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  top: 20px;
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  position: relative;
+  top: 100px;
+  bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(6, 27, 14);
+  width: 350px;
+  height: 520px;
+  border-radius: 20px;
+  margin: 50px;
+  box-shadow: 25px 25px 5px rgb(53, 49, 49);
+}
+
+.card-image {
+  border-radius: 20px;
+  height: 290px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.car-1 {
+  background-image: url("drybrushing.jpeg");
+  background-size: cover;
+}
+.car-2 {
+  background-image: url("lemon.jpeg");
+  background-size: cover;
+}
+.car-3 {
+  background-image: url("night.jpeg");
+  background-size: cover;
+}
+h3 {
+  color: whitesmoke;
+  margin: 0;
+  padding: 0 10px;
+  font-family: "Prata", serif;
+  letter-spacing: 1px;
+}
+
+p {
+  color: whitesmoke;
+  margin-top: 8px;
+  padding: 0 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+}
+
+.card a {
+  background-color: rgb(37, 59, 46);
+  color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 15px 9px 4px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  border-radius: 20px;
+  justify-content: center;
+}
+.card a:hover {
+  display: flex;
+  font-size: larger;
+  transition: 1s;
+}
+.card:hover {
+  background-color: #3d501f;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 1.7s;
+}
+
+#section3 {
+  height: 140vh;
+  background-image: url("fruit5.jpeg");
+  background-size: cover;
+}
+
+#section3 h2 {
+  position: relative;
+  top: 2%;
+}
+.container2 {
+  display: flex;
+  height: 100vh;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.card2 {
+  display: inline-flex;
+  width: 65%;
+  height: 20%;
+  background-color: rgb(17, 51, 3);
+  margin: 3.75em 5.625em 2em;
+  position: relative;
+  top: 0.625em;
+  bottom: 2.5%;
+}
+
+.card-image2 {
+  width: 17em;
+  height: 100%;
+  border: solid white 4px;
+}
+
+.img1 {
+  background-image: url("sweetp.jpg");
+  background-size: cover;
+}
+.img2 {
+  background-image: url("mango.jpg");
+  background-size: cover;
+}
+.img3 {
+  background-image: url("curry.jpg");
+  background-size: cover;
+}
+
+.textarea {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.card2 .textarea h3 p {
+  display: block;
+  font-size: 150%;
+}
+.card2 h3 {
+  margin-top: 0.625em;
+  text-decoration: underline;
+  font-size: 150%;
+  padding-top: 1%;
+}
+.card2 p {
+  font-size: 120%;
+  padding-top: 2%;
+  letter-spacing: 1px;
+}
+.card2 a {
+  background-color: rgb(30, 90, 27);
+  color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 100%;
+  width: 7em;
+  text-align: center;
+  padding: 3.7em 1.25em;
+  cursor: pointer;
+  border-bottom-left-radius: 15%;
+  border-top-left-radius: 15%;
+  display: block;
+  font-size: 125%;
+}
+.card2 a:hover {
+  background-color: rgb(82, 7, 7);
+  display: flex;
+  transition: 0.7s;
+  font-size: 130%;
+}
+
+.card2:hover {
+  background-color: #719628;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 1.3s;
+  width: 67%;
+}
+
+#section4 {
+  height: 100vh;
+  background-image: url("turmeric.jpeg");
+  background-size: cover;
+}
+
+#section4 h5 {
+  position: relative;
+  background-color: none;
+}
+
+.container3 {
+  position: relative;
+  top: 20px;
+  display: flex;
+  height: 80vh;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.card3 {
+  position: relative;
+  top: 7px;
+  bottom: 30px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(166, 168, 167);
+  width: 27em;
+  height: 37em;
+  border-radius: 1.25em;
+  margin: 2.5em 4em;
+  box-shadow: 20px 20px 5px rgb(82, 80, 80);
+  text-align: center;
+}
+.card3 .heading3 {
+  margin: 0;
+  padding: 0.75em;
+  width: 100%;
+  height: 0.1rem;
+}
+.card3 h3 {
+  position: relative;
+  bottom: 10px;
+  margin: 0;
+  padding: 0.9375em 1.25em 2.5em;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  text-decoration: underline;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+
+.card3 p {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.card-image3 {
+  position: relative;
+  top: 2%;
+  height: 17.5em;
+  width: 100%;
+}
+.pic1 {
+  background-image: url("face.jpg");
+  background-size: cover;
+}
+.pic2 {
+  background-image: url("shot.jpg");
+  background-size: cover;
+}
+.card3 a {
+  width: 100%;
+  background-color: #53741e;
+  border-bottom-left-radius: 0.75em;
+  border-bottom-right-radius: 0.75em;
+  padding-top: 15px;
+  color: whitesmoke;
+  font-size: 1.25em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.card3 a:hover {
+  font-size: x-large;
+  transition: 0.8s;
+}
+
+.card3:hover {
+  background-color: #220303;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 1.3s;
+}
+
+.card3 .heading h3:hover {
+  cursor: pointer;
+  font-weight: bold;
+  transform: scale(1.03);
+  transition: 1.3s;
+}
+.btt {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+ 
+}
+.backtotop {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  height: 20px;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: rgb(6, 48, 6);
+}
+
+
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 1349px) {
+  #section2 {
+    height: 240vh;
+  }
+  .container {
+    height: 180vh;
+    top: 10px;
+  }
+
+@media screen and (max-width: 1119px) {
+  #section4 {
+    height: 200vh;
+  }
+  .container3 {
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+  }
+  .card3 {
+    position: relative;
+    justify-content: center;
+    align-self: center;
+  }
+ 
+
+@media screen and (max-width: 899px) {
+  #section2 {
+    height: 282vh;
+  }
+  .container {
+    height: 270vh;
+  }
+  .card {
+    top: 10px;
+  }
+}
+#section4 {
+  height: 170vh;
+}
+.container3 {
+  display: flex;
+  justify-content: center;
+}
+.card3 {
+  position: relative;
+  justify-content: center;
+  align-self: center;
+}
+@media screen and (max-width: 877px) {
+
+
+  #section3 {
+    height: 242vh;
+  }
+  .card2 .textarea h3 p {
+    display: inline-block;
+    font-size: 120%;
+  }
+  #section3 h2 {
+    position: relative;
+    top: 2%;
+  }
+  .container2 {
+    display: flex;
+    height: 230vh;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .card2 {
+    font-size: 90%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(6, 27, 14);
+    width: 350px;
+    height: 530px;
+    margin: 50px;
+    
+  }
+
+  .card-image2 {
+    border-radius: 20px;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .card2 a {
+    height: 5px;
+    width: 100%;
+    padding: 1.5em;
+    border-bottom-left-radius: 25%;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 25%;
+    display: flex;
+    font-size: 120%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom: 16px;
+  }
+  .card2 .textarea {
+
+    height: 40%;
+    width: 100%;
+    display: block;
+  }
+  .textarea .card2 a {
+    display: flex;
+    width: 100%;
+    height: 5px;
+    text-align: center;
+  }
+  .card2 a:hover {
+    background-color: rgb(82, 7, 7);
+    display: flex;
+    transition: 0.7s;
+    font-size: 130%;
+  }
+
+  .card2:hover {
+    background-color: #719628;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 1.3s;
+    width: 50%;
+  }
+
+@media screen and (max-width: 785px) {
+  h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 120%;
+    padding: 80px;
+    line-height: 180%;
+  }
+  .heading {
+    margin: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: 710px){
+  .card2{
+    pointer-events: none;
+  }
+  @media screen and (max-width:553px){
+    .container3 h3 {
+      font-size: 1.4em;
+      
+    }
+
+@media screen and (max-width:544px){
+  .container3 h3 {
+    padding: 0.9em;
+    font-size: 1.3em;
+  }
+  @media screen and (max-width:532px){
+  .container3 h3 {
+    padding: 1em;
+    font-size: 1.2em;
+  }
+  h4 {
+    line-height:115% ;
+  }
+}
+@media screen and (max-width: 472px) {
+  .container3 h3 {
+    
+    font-size: 1.1em;
+
+}
+@media screen and (max-width: 464px) {
+  .container3 h3 {
+    padding: 1em 0;
+  }
+}
+  @media screen and (max-width: 450px){
+    h4 {
+      border-radius: 25%;
+      padding: 50px;
+  }
+  @media screen and (max-width: 426px) {
+    .container3 h3{
+      font-size: 1em;
+
+  }
+  @media screen and (max-width: 400px){
+    .card2 {
+      transform: scale(0.95);
+      
+    }
+
+  }
+  @media screen and (max-width: 394px){
+    .container3 .heading {
+      height: 3.6rem;
+      padding: 8px 0;
+
+    }
+    .container3 h3 {
+      font-size:0.9em ;
+      padding: 0.8em 0;
+    }
+  }
+  @media screen and (max-width: 390px){
+    .card2 {
+      transform: scale(0.90);
+      pointer-events: none;
+    }
+    .card3 p {
+      font-size: 1.3em;
+    }
+    h4 {line-height: 130%;
+      
+    }
+    @media screen and (max-width: 388px){
+      .card3 .heading3 {
+     
+        height: 3.5rem;
+      }
+      
+      .container3 h3 {
+        margin: 2px 0;
+      }
+    }
+    @media screen and (max-width: 373px){
+      .card3 p {
+        font-size: 1.2em;
+        line-height:100% ;
+        padding: 0.5em;
+      }
+    }
+    @media screen and (max-width: 352px){
+      .card2 {
+        transform: scale(0.85);
+        pointer-events: none;
+      }
+      h4 {
+        padding:45px;
+        font-size: 110%;
+    }
+    @media screen and (max-width: 342px){
+      .card2 {
+        transform: scale(0.80);
+        pointer-events: none;
+      
+      }
+      @media screen and (max-width: 332px){
+        .card2 {
+          transform: scale(0.78);
+          pointer-events: none;
+        }
+        
+        
+          }
+          @media screen and (max-width: 320px){
+            .card2 {
+              transform: scale(0.76);
+              pointer-events: none;
+            }
+            
+          }
